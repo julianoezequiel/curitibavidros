@@ -75,6 +75,12 @@ var customScripts = {
 				
             },
             scrollChange: function ($currentListItem) {
+               
+                if($(window).scrollTop() <595){
+                    $('#contato').show();
+                }else{
+                    $('#contato').hide();
+                }
                 //I get fired when you enter a section and I pass the list item of the section
 				if(!$('#main-nav ul li:first-child').hasClass('active')){
 					$('#main-nav').addClass('addBg');
@@ -99,4 +105,15 @@ var customScripts = {
 }
 $('document').ready(function () {
     customScripts.init();
+
+    $( window ).resize(function() {
+        console.log('resize');
+        if($(window).width()< 600){
+
+        $('#contato').addClass('customPosition');
+        }else{
+            $('#contato').removeClass('customPosition');
+        }
+    });
+   
 });
