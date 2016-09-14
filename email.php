@@ -22,7 +22,7 @@ cadastrado para receber o formulário.*/
        $email_to = 'vidroscuritiba@hotmail.com,julianoezequiel@gmail.com'; //Email para onde vai ser enviado
 	   //julianoezequiel@gmail.com
 
-    $status = mail($email_to, "Contato Site", $corpo, $headers); //enviando o email.
+    $status = mail($email_to, "Orçamento :", $corpo, $headers); //enviando o email.
 
     if($status) {
         echo "<script> alert('Email enviando com sucesso!'); </script>"; //verifica se foi enviado o email com sucesso.
