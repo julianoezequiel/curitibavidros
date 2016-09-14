@@ -8,7 +8,7 @@
 
     $headers  = "From: $nome \r\n";
     $headers .= "Reply-To: $email\r\n";
-    $headers .= 'Cc: julianoezequiel@gmail.com' . "\r\n";
+    // $headers .= 'Cc: julianoezequiel@gmail.com' . "\r\n";
 
 /*abaixo será os dados que serão enviado para o email
 cadastrado para receber o formulário.*/
@@ -19,7 +19,7 @@ cadastrado para receber o formulário.*/
        $corpo .= "Email: " . $email . "\n";
        $corpo .= "Comentario: " . $comments . "\n";
 
-       $email_to = 'vidroscuritiba@hotmail.com'; //Email para onde vai ser enviado
+       $email_to = 'vidroscuritiba@hotmail.com,julianoezequiel@gmail.com'; //Email para onde vai ser enviado
 	   //julianoezequiel@gmail.com
 
     $status = mail($email_to, "Contato Site", $corpo, $headers); //enviando o email.
