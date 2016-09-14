@@ -1,0 +1,5 @@
+# robots.txt gerado em 
+# curitibavidros.com.br/robots-txt/
+User-agent: *
+Disallow: 
+# http://www.curitibavidros.com.br
